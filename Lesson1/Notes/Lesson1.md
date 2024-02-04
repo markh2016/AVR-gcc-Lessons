@@ -15,7 +15,7 @@ Harvard architecture is a computer system design that separates the memory and p
 
 In a normal computer that follows von Neumann architecture, instructions, and data both are stored in the same memory. So same buses are used to fetch instructions and data. This means the CPU cannot do both things together (read the instruction and read/write data). Harvard Architecture is the computer architecture that contains separate storage and separate buses (signal path) for instruction and data. It was basically developed to overcome the bottleneck of Von Neumann’s Architecture. The main advantage of having separate buses for instruction and data is that the CPU can access instructions and read/write data at the same time. 
 
-![Harvard Achitecture](Lesson1/Images/harvard.png)  
+![Harvard Achitecture](../Images/harvard.png)  
 
 ## What is RISC  Architecture ??  
 RISC stands for Reduced Instruction Set Computer and is a type of architectural processor design strategy. “Architecture” refers to the way a processor is planned and built and can refer to either the hardware or the software that is closest to the silicon on which it runs
@@ -63,7 +63,9 @@ The AVR family controllers have register based architecture which means that bot
 
 Block Diagram Showing Simple Example Carrying Out OR Operation Between Two Input Registers And Value Storage In Output Register
 
-![Risk Architecture](Lesson1/Images/architecture.png)
+![Risk Architecture](../Images/architecture.png)
 
 ## Read the datasheet 
+
+
 
