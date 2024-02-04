@@ -166,6 +166,19 @@ This line configures PD4 (which corresponds to pin 4 of Port D) as an output pin
 The |= operator performs a bitwise OR operation and assigns the result back to DDRD. (1 << LED) shifts the value 1 to the left by the number of bits specified by the LED macro, 
 which effectively sets the corresponding bit high.
 
+## Summaryof what the DDRx register  does 
+
+DDRx register:
+
+Data Direction Register configures the data direction of port pins. These registers are used for determining whether port pins will be used for input or output. On writing 1 to a bit in DDRx makes corresponding port pin as output, while writing 0 to a bit in DDRx makes corresponding port pin as input.
+
+Every port has 3 registers associated with it each one have size of 8 bits. Every bit in those registers configures the pins of particular port. Bit0 of these registers are associated with Pin0 of the port, Bit1 of these registers are associated with Pin1 of the port, and same as for other bits.
+
+The three registers available in AVR microcontroller are as follows: 
+
+    DDRx register
+    PORTx register
+    PINx register
 
 
 
