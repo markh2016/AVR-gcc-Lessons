@@ -69,7 +69,16 @@ Architecture Diagram of Atmel  devices in general
 
 ![Risk Architecture](../Images/architecture.png)
 
-## Read the datasheet 
+## Read the datasheet  
+
+Most of you understanding of Mcu's will come from the datasheet. Dont worry if you dont understand all of this in  one go 
+I will guide you through the most important starting points  as i go through this  step by step  
+The important parts to get to grips with  are drawing yourself a flow  chart as coding and seeing where  you go wrong  shows up  
+easily.  Hence the flow chart  on the initial README.MD  file 
+
+Here is the link to the datasheet 
+
+[Datasheet for Atmel 328P](../Notes/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
 
 
 
