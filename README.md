@@ -2,6 +2,12 @@
 # Make File For Atmel Cpu MD Harrington Kent 
 ## Date 03/02/2024
 
+## Initial  diagrams / Drawings you will need to follow this
+
+![Atmel 328P Pin Out]
+
+
+
 ## Purpose of make file and what this does  
 Makefiles are used to help decide which parts of a large program need to be recompiled. In the vast majority of cases, C or C++ files are compiled. Makefile  can be used to do many tasks other than just compile.  It can be used to preform stick standard bash tasks  well
 
