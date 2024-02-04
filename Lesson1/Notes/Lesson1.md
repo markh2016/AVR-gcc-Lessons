@@ -265,6 +265,6 @@ This  should now cover your understanding of 3 registers  associated  with ports
 
 Here are some links to assist 
 
-[![Makefile Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=GExnnTaBELk&t=2336s "Makefile Is AWESOME")
+[![Makefile Is AWESOME](https://www.youtube.com/watch?v=GExnnTaBELk&t=2336s)/0.jpg)](https://www.youtube.com/watch?v=GExnnTaBELk&t=2336s "Makefile Is AWESOME")
 
 ## Enjoy , MD Harrington Kent London
