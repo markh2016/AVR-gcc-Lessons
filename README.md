@@ -4,7 +4,13 @@
 
 ## Initial  diagrams / Drawings you will need to follow this
 
-![Atmel 328P Pin Out]
+Diagram of Uno Development Board 
+![Arduino Pin Out ](Lesson1/Images/Arduino-Uno-Pin-Diagram.png)
+
+
+Diagram of Atmel 328P Pin out  
+
+![Atmel 328P Pin Out](Lesson1/Images/mainIC.png)
 
 
 
