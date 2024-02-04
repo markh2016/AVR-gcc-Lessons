@@ -78,7 +78,36 @@ easily.  Hence the flow chart  on the initial README.MD  file
 
 Here is the link to the datasheet 
 
-[Datasheet for Atmel 328P](../../Notes/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
+[Datasheet for Atmel 328P](../../Notes/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf) 
+
+## The code used in lesson1  
+
+The aim is simply to  get the  Mcu to output a a value to portd pin 4 
+
+```
+
+
+#include "lesson1.h"
+
+#define F_CPU 16000000
+#define LED PD4  // Change LED to be PD4
+
+int main(void) {
+    DDRD |= (1 << LED);  // Configure PORTB0 (PD4) as output 
+    
+    PORTD |= (1 << LED); // Set PD4 high (LED on)
+
+    while(1) {
+        // Your code here (this loop will run indefinitely)
+    }
+
+    return 0;
+}
+
+
+```
+
+
 
 
 
