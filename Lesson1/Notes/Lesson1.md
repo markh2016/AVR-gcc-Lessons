@@ -153,7 +153,18 @@ This line defines a macro F_CPU with the value 16000000. This is commonly used i
 ```
 #define LED PD4  // Change LED to be PD4
 ```
-This line defines a macro LED which represents the pin PD4. This is often done to improve code readability and maintainability by using meaningful names instead of raw pin numbers.
+This line defines a macro LED which represents the pin PD4. This is often done to improve code readability and maintainability by using meaningful names instead of raw pin numbers.  
+```
+int main(void) {
+```
+This line declares the main function. In C programming, execution of a program begins from the main function.  
+
+```
+  DDRD |= (1 << LED);  // Configure PORTB0 (PD4) as output
+```
+This line configures PD4 (which corresponds to pin 4 of Port D) as an output pin. It sets the corresponding bit in the DDRD register to 1. 
+The |= operator performs a bitwise OR operation and assigns the result back to DDRD. (1 << LED) shifts the value 1 to the left by the number of bits specified by the LED macro, 
+which effectively sets the corresponding bit high.
 
 
 
