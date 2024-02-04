@@ -163,18 +163,6 @@ Defines a target burn to upload the .hex file onto the AVR microcontroller using
 ![Im13](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/6704f46c-b2f5-4e8e-98da-cc8504d6314d)  
 Defines the clean target to remove all generated files and object files.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Diagrams you will need  to follow this 
 An excellent presentation  explaining the memory map with assember for the   
 Atmel devices 
@@ -191,7 +179,9 @@ The Layout showing how  you would link the components to the breadboard  with ar
 Parts List for the Lesson 1 and Lesson2 
 ![Parts list for lesson 1 and Lesson 2 ](Lesson1/Images/PartsList.png) 
 
-<!--- Comments are Fun [a relative link](other_file.md) --->
+## Lesson 1 Notes concerning some of the arcitecture 
+
+[Lesson1 Notes ](Lesson1/Notes/Lesson1.md) 
 
 
 
