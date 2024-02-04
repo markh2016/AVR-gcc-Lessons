@@ -265,7 +265,6 @@ This  should now cover your understanding of 3 registers  associated  with ports
 
 Here are some links to assist 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=GExnnTaBELk&t=2336s" target="_blank"><img src="http://img.youtube.com/vi/v=GExnnTaBELk&t=2336s/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<img id="img" draggable="false" class="style-scope yt-img-shadow" alt="" src="https://i.ytimg.com/vi/GExnnTaBELk/hqdefault_866166.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLD_A4yGOmWkv4gZCUygd-emR3ctrA">
 
 ## Enjoy , MD Harrington Kent London
