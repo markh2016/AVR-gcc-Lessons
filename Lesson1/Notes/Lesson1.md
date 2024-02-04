@@ -61,7 +61,7 @@ The AVR family controllers have register based architecture which means that bot
 
 
 Block Diagram Showing Simple Example Carrying Out OR Operation Between Two Input Registers And Value Storage  
-In Output Register  
+in Output Register  
 
 ![Risk Architecture](../Images/Regsiters.png)  
 
