@@ -1,5 +1,4 @@
-#include <avr/io.h>
-#include <avr/interrupt.h>
+#include "lesson1.h"
 
 #define F_CPU 16000000
 #define LED PD4  // Change LED to be PB0
