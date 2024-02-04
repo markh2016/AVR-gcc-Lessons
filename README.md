@@ -115,7 +115,11 @@ This Makefile assumes that you have the AVR toolchain (avr-gcc, avr-objcopy, avr
 ```
 
 
-## Diagrams you will need  to follow this   
+## Diagrams you will need  to follow this 
 
-<embed src="https://github.com/markh2016/AVR-gcc-Lessons/blob/main/Notes/MCU-Part03.pdf " type="application/pdf">
+ Flow chart for lesson 1  
+ 
+ ![Flow Chart for lesson1  ](Lesson1/Images/flowchartlesson1.png)
+
+<embed src="Notes/MCU-Part03.pdf " type="application/pdf">
 
