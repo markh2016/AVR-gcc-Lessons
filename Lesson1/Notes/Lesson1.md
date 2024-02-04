@@ -78,7 +78,7 @@ easily.  Hence the flow chart  on the initial README.MD  file
 
 Here is the link to the datasheet 
 
-[Datasheet for Atmel 328P](../Notes/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
+[Datasheet for Atmel 328P](../../Notes/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
 
 
 
