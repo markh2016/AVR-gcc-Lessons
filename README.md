@@ -116,3 +116,4 @@ This Makefile assumes that you have the AVR toolchain (avr-gcc, avr-objcopy, avr
 
 
 ## Diagrams you will need  to follow this 
+[embed]https://github.com/markh2016/AVR-gcc-Lessons/blob/main/Notes/MCU-Part03.pdf[/embed]
