@@ -261,4 +261,10 @@ Finally  issue make  burn to upload code to arduino
 
 This  should now cover your understanding of 3 registers  associated  with ports  thus far 
 
+6: Last point  and thats to go and find out all about makefile 
+
+Here are some links to assist 
+
+[![Makefile Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=GExnnTaBELk&t=2336s "Makefile Is AWESOME")
+
 ## Enjoy , MD Harrington Kent London
