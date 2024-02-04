@@ -45,7 +45,7 @@ Instruction Bus: It carries instructions among the main memory system, processor
 Instruction Address Bus: It carries the address of instructions from the processor to the main memory system. 
 
 
-## What is so special about Atmel Mcu'same  
+## What is so special about Atmel Mcu's
 
 AVR is an 8-bit microcontroller belonging to the family of Reduced Instruction Set Computer (RISC). In RISC architecture the instruction set of the computer are not only fewer in number but also simpler and faster in operation.
 
@@ -53,15 +53,17 @@ AVR is an 8-bit microcontroller belonging to the family of Reduced Instruction S
 We will explore more on this when we will learn about the architecture of AVR microcontrollers in following section.
 
 
-## What is 8-bit?   
+## What is  meant by 8-bit?   
 
 This means that the microcontroller is capable of transmitting and receiving 8-bit data. The input/output registers available are of 8-bits. 
 
 The AVR family controllers have register based architecture which means that both the operands for an operation are stored in a register and the result of the operation is also stored in a register. Following figure shows a simple example performing OR operation between two input registers and storing the value in Output Register.
 
 
-
 Block Diagram Showing Simple Example Carrying Out OR Operation Between Two Input Registers And Value Storage In Output Register
+![Risk Architecture](../Images/Regsiters.png)  
+
+Architecture Diagram of Atmel  devices in general   
 
 ![Risk Architecture](../Images/architecture.png)
 
