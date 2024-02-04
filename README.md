@@ -121,12 +121,7 @@ This Makefile assumes that you have the AVR toolchain (avr-gcc, avr-objcopy, avr
  
 ![Flow Chart for lesson1  ](Lesson1/Images/flowchartlesson1.png)  
 
-[![Plugin Version](https://img.shields.io/wordpress/plugin/v/dirtysuds-embed-pdf.svg)](https://wordpress.org/plugins/dirtysuds-embed-pdf/)
-[![License](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://wordpress.org/about/license/)
-[![Tested Version](https://img.shields.io/wordpress/v/dirtysuds-embed-pdf.svg)](https://wordpress.org/plugins/dirtysuds-embed-pdf/)
-[![Rating](https://img.shields.io/wordpress/plugin/r/dirtysuds-embed-pdf.svg)](https://wordpress.org/support/view/plugin-reviews/dirtysuds-embed-pdf)
-[![Downloads](https://img.shields.io/wordpress/plugin/dt/dirtysuds-embed-pdf.svg)](https://wordpress.org/plugins/dirtysuds-embed-pdf/)
 
 
-[embed]https://github.com/markh2016/AVR-gcc-Lessons/blob/main/Notes/MCU-Part03.pdf[/embed]
+[embed]Notes/MCU-Part03.pdf[/embed]
 
