@@ -113,6 +113,66 @@ clean: Removes all generated files.
 This Makefile assumes that you have the AVR toolchain (avr-gcc, avr-objcopy, avrdude) installed and configured correctly on your system, and that you have an AVR microcontroller connected to /dev/ttyUSB0.
 
 ```
+## A more comprehensive break down   of how this makefile works  line by line of code 
+
+![Im1](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/d65e31d6-e594-4fab-8230-97c459e5d08f)  
+Sets the variable target to "main", which represents the name of the main target file without the file extension.  
+
+![Im2](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/a00691be-1eb0-4297-9144-950918793774)  
+Uses wildcard function to find all the C source files (*.c) in the source directory and assigns them to src_files.
+Uses patsubst function to replace the .c extension with .o for each source file and assigns them to obj_files.  
+This creates a list of corresponding object files.
+
+![Im3](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/475444c9-7018-4878-a242-9fc49e08b1d7)  
+
+Sets the variable cpu_type to specify the type of AVR microcontroller being used, in this case, it's atmega328p.
+
+![Im4](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/cc31e52d-6927-4bc8-9cd2-579e1bd892e4)  
+
+Sets the variables CC, OBJCOPY, and AVRDUDE to the commands for compiling (avr-gcc), object copying (avr-objcopy), 
+and AVR programming (avrdude) respectively.  
+
+![Im5](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/8ad26606-829a-47b0-8ab2-29e157e08f0f)  
+Sets the CFLAGS variable which contains compiler flags:
+
+    -I$(hdr_dir): Specifies the directory to search for header files.
+    -mmcu=$(cpu_type): Specifies the AVR microcontroller type.
+    -Os: Optimization flag for size.
+
+![Im6](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/bb32015a-5cb4-4749-8575-3284dd1e4dac)  
+Defines the default target all which depends on generating .hex, .elf, and .s files.  
+
+![Im7](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/5a64a26b-fcd6-4612-aae3-44232a132737)  
+Generates assembly code .s file from source files using the avr-gcc command.
+
+![Im8](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/f1a1dcd3-4d12-4eae-ab44-b95665bd0b0a)  
+Compiles each .c file in the source directory into an object file using avr-gcc.  
+
+![Im9](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/83a117c9-96f5-41cd-8a64-53b21c0d5b8b)  
+Links object files into the final target executable using avr-gcc.  
+
+![Im10](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/e2589aa6-b519-483f-808f-c958e72adbb8)  
+Converts the target executable into Intel HEX format using avr-objcopy.  
+
+![Im11](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/d421b3e0-ed27-427d-b2f8-c2b0cf83f85e)  
+Converts the target executable into ELF format using avr-objcopy.  
+
+![Im12](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/3ba3c032-eddd-4367-848b-e7c889e351a4)  
+Defines a target burn to upload the .hex file onto the AVR microcontroller using avrdude.  
+
+![Im13](https://github.com/markh2016/AVR-gcc-Lessons/assets/16375330/6704f46c-b2f5-4e8e-98da-cc8504d6314d)  
+Defines the clean target to remove all generated files and object files.
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Diagrams you will need  to follow this 
