@@ -60,7 +60,9 @@ This means that the microcontroller is capable of transmitting and receiving 8-b
 The AVR family controllers have register based architecture which means that both the operands for an operation are stored in a register and the result of the operation is also stored in a register. Following figure shows a simple example performing OR operation between two input registers and storing the value in Output Register.
 
 
-Block Diagram Showing Simple Example Carrying Out OR Operation Between Two Input Registers And Value Storage In Output Register
+Block Diagram Showing Simple Example Carrying Out OR Operation Between Two Input Registers And Value Storage  
+In Output Register  
+
 ![Risk Architecture](../Images/Regsiters.png)  
 
 Architecture Diagram of Atmel  devices in general   
