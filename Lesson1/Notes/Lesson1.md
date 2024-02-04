@@ -143,7 +143,7 @@ For more indepth detail see the following link  regards header files
 
 https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
 
-## Onto next lines of code  
+##  Back Onto next lines of code  
 
 ```
 #define F_CPU 16000000
@@ -166,9 +166,11 @@ This line configures PD4 (which corresponds to pin 4 of Port D) as an output pin
 The |= operator performs a bitwise OR operation and assigns the result back to DDRD. (1 << LED) shifts the value 1 to the left by the number of bits specified by the LED macro, 
 which effectively sets the corresponding bit high.
 
-## Summaryof what the DDRx register  does 
+## Summary of what the DDRx register  does  
 
-DDRx register:
+## (Breaking away for a little  bit to gain understanding of what these registers do ! )
+
+## DDRx register:
 
 Data Direction Register configures the data direction of port pins. These registers are used for determining whether port pins will be used for input or output. On writing 1 to a bit in DDRx makes corresponding port pin as output, while writing 0 to a bit in DDRx makes corresponding port pin as input.
 
@@ -180,9 +182,83 @@ The three registers available in AVR microcontroller are as follows:
     PORTx register
     PINx register
 
+## PINx register and its purpose 
 
+PINx register used to read the data from port pins. In order to read the data from port pin, first we have to change the port?s data direction to input. This is done by setting bits in DDRx to zero. If port is made output, then reading PINx register will give a data that has been output on port pins.
 
+There are two input modes. Either we can use port pins as internal pull up or as tri stated inputs. It will be explained as shown below:
 
+For reading the data from port A, eg below 
 
+```
+    DDRD = 0x00;    //Set port A as input  
+    x = PIND;       //Read contents of port D   
+```
 
+## PORTx register:
 
+In general PORTx register can be used for two purposes:
+
+To output data: when port is configured as output then PORTx register is used. When we set bits in DDRx to 1, corresponding pins becomes output pins. Now we can write the data into respective bits in PORTx register. This will immediately change the output state of pins according to data we have written on the ports.For example:  
+```
+// To output data in variable x on port D
+    DDRA = 0xFF;              //make port D as outputs  
+    PORTD = x;                //output variable on port  
+
+// To output 0xFF data on port D
+    DDRD = 0b11111111;        //set all the pins of portD as outputs  
+    PORTD = 0xFF;             //write the data on port 
+  
+// To output data on only 0th bit of port D
+
+    DDRD.0 = 1;        //set only 0th pin of port D as an output  
+    PORTD.0 = 1;       //make it high signal.   
+
+``` 
+
+## To activate/deactivate pull up resistors on ports 
+
+When port is configured as input we set the bits in DDRx to 0, i.e. make port pins as inputs the corresponding bits in PORTx registers used to activate/deactivate pull-up registers associated with that pin. In order for activating pull-up resistor, set the bit in PORTx register to 1, and for deactivating (i.e. to make port as tri stated) set it to zero.  
+
+In input mode, when pull-up is enabled, default state of the pin is '1'. So if we don't add anything to pin and if we try to read it then it will read as 1.
+
+Note: While using on chip Analog to Digital Converter (ADC), ADC port pins must be used as tri stated input. (More  about this much later ) 
+
+##  Back Onto next lines of code  
+
+```
+  PORTD |= (1 << LED); // Set PD4 high (LED on)
+```
+This line sets PD4 (LED pin) high, turning the LED on. It sets the corresponding bit in the PORTD register to 1. Similar to the previous line, (1 << LED) sets the bit high by shifting 1 to the left by the number of bits specified by the LED macro.
+
+```
+   while(1) {
+        // Your code here (this loop will run indefinitely)
+    }
+
+```
+This line starts an infinite loop. The program will keep executing the code inside this loop repeatedly because the condition 1 is always true.  
+
+```
+ return 0;
+```
+This line signifies the end of the main function and returns 0 to indicate successful completion of the program execution. In embedded systems programming, the main function typically does not return as there's no operating system to return to, but returning 0 is a convention to indicate successful completion.
+
+Overall, this code initializes PD4 as an output pin and turns on the LED connected to that pin, then enters an infinite loop.
+
+## Your tasks for your own research 
+1: Perform a  " make clean "  from the route of your download  and do the  following 
+
+2: Alter the C code only to switch on led2  then  recompile  using make from the  root directory of your download  
+Finally  issue " make  burn "  to upload code to arduino 
+
+3: Look up what the libraries do in the lesson1.h 
+
+4: Perform a  " make clean " the  do the  following 
+
+5: Alter the C code only to switch on led2  and led1 on  then  recompile  using " make " from the  root directory of your download  
+Finally  issue make  burn to upload code to arduino 
+
+This  should now cover your understanding of 3 registers  associated  with ports  thus far 
+
+## Enjoy , MD Harrington Kent London
