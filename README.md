@@ -128,5 +128,5 @@ This Makefile assumes that you have the AVR toolchain (avr-gcc, avr-objcopy, avr
 [![Downloads](https://img.shields.io/wordpress/plugin/dt/dirtysuds-embed-pdf.svg)](https://wordpress.org/plugins/dirtysuds-embed-pdf/)
 
 
-[embed]Notes/MCU-Part03.pdf[/embed]
+[embed]https://github.com/markh2016/AVR-gcc-Lessons/blob/main/Notes/MCU-Part03.pdf[/embed]
 
