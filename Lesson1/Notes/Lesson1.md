@@ -107,6 +107,45 @@ int main(void) {
 
 ```
 
+## Lets break the code down  and see what this is doing 
+
+```
+#include "lesson1.h"
+```
+This line includes a header file named "lesson1.h". Header files typically contain declarations of functions, macros, constants, etc., that are used in the program.
+
+## Where does lesson1.h  come from  ?
+
+This is contained in the Header_files Directory  and has this code within This is simply the headers that it needs 
+header files in C serve as a means of organizing code, providing function prototypes and shared declarations, promoting modularity, and facilitating code reuse.  
+They are essential in large projects and contribute to writing clean and maintainable C programs
+Code contained in lesson1.h 
+
+## Why code using header files   
+
+A header file is a file containing C declarations and macro definitions (see Macros) to be shared between several source files. You request the use of a header file in your program by including it, with the C preprocessing directive ‘#include’.
+
+Header files serve two purposes.
+
+System header files declare the interfaces to parts of the operating system. You include them in your program to supply the definitions and declarations you need to invoke system calls and libraries.
+Your own header files contain declarations for interfaces between the source files of your program. Each time you have a group of related declarations and macro definitions all or most of which are needed in several different source files, it is a good idea to create a header file for them. 
+
+Including a header file produces the same results as copying the header file into each source file that needs it. Such copying would be time-consuming and error-prone. With a header file, the related declarations appear in only one place. If they need to be changed, they can be changed in one place, and programs that include the header file will automatically use the new version when next recompiled. The header file eliminates the labor of finding and changing all the copies as well as the risk that a failure to find one copy will result in inconsistencies within a program.
+
+In C, the usual convention is to give header files names that end with .h. It is most portable to use only letters, digits, dashes, and underscores in header file names, and at most one dot. 
+
+``` 
+#include <avr/io.h>
+#include <avr/interrupt.h>
+
+```
+For more indepth detail see the following link  regards header files 
+
+https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
+
+
+
+
 
 
 
