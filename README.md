@@ -121,7 +121,8 @@ This Makefile assumes that you have the AVR toolchain (avr-gcc, avr-objcopy, avr
  
 ![Flow Chart for lesson1  ](Lesson1/Images/flowchartlesson1.png)  
 
+ Presentation  assembler, various registers
+[MCU-Part03.pdf](https://github.com/markh2016/AVR-gcc-Lessons/files/14155371/MCU-Part03.pdf)
 
 
-[embed]Notes/MCU-Part03.pdf[/embed]
 
