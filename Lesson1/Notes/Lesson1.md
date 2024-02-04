@@ -143,6 +143,18 @@ For more indepth detail see the following link  regards header files
 
 https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
 
+## Onto next lines of code  
+
+```
+#define F_CPU 16000000
+```
+This line defines a macro F_CPU with the value 16000000. This is commonly used in AVR programming to specify the CPU clock frequency in Hertz.
+
+```
+#define LED PD4  // Change LED to be PD4
+```
+This line defines a macro LED which represents the pin PD4. This is often done to improve code readability and maintainability by using meaningful names instead of raw pin numbers.
+
 
 
 
