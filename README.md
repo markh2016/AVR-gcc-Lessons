@@ -116,13 +116,23 @@ This Makefile assumes that you have the AVR toolchain (avr-gcc, avr-objcopy, avr
 
 
 ## Diagrams you will need  to follow this 
+An excellent presentation  explaining the memory map with assember for the   
+Atmel devices 
 
- Flow chart for lesson 1  
- 
+[MCU-Part03.pdf](https://github.com/markh2016/AVR-gcc-Lessons/files/14155371/MCU-Part03.pdf)  
+
+Flow Charts For Lesson 1  
 ![Flow Chart for lesson1  ](Lesson1/Images/flowchartlesson1.png)  
 
- Presentation  assembler, various registers
-[MCU-Part03.pdf](https://github.com/markh2016/AVR-gcc-Lessons/files/14155371/MCU-Part03.pdf)
+The Layout showing how  you would link the components to the breadboard  with arduino
+
+![Layout for Lesson1 and Lesson2 using fritzing](Lesson1/Images/Lesson1_Lesson2_layout.png)
+
+Parts List for the Lesson 1 and Lesson2 
+![Parts list for lesson 1 and Lesson 2 ](Lesson1/Images/PartsList.png) 
+
+<!--- Comments are Fun [a relative link](other_file.md) --->
+
 
 
 
